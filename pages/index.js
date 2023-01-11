@@ -15,7 +15,7 @@ function RegisterBox() {
     const [response, setResponse] = useState('')
 
     function contactUs() {
-      setResponse(<a href="https://discord.gg/NwXnTcrucT" target="_blank" rel="noopener noreferrer">Suporte no Discord</a>)
+      setResponse(<a href="wa.me/+5547991458053" target="_blank" rel="noopener noreferrer">Contato</a>)
       ModalOpen()
     }
 
@@ -30,7 +30,7 @@ function RegisterBox() {
       }catch{
       }
       try {
-        axios.post('api/apimanga', {user: usernameReg, pass: passwordReg, id: IDReg}).then(res => {
+        axios.post('api/api', {user: usernameReg, pass: passwordReg, id: IDReg}).then(res => {
           if(res.data.msg == "Registrado!"){
             setCookie(null, "cookie", `${usernameReg}`,{
             maxAge: 86400 * 30,
@@ -67,7 +67,7 @@ function RegisterBox() {
               <input type="password" placeholder='Senha' onChange={(e) => {setPasswordReg(e.target.value);}} />
             </div> 
             <div className="school-id">
-              <h3>ID da escola</h3>
+              <h3>ID</h3>
               <input type="text" placeholder='ID' onChange={(e) => {setIDReg(e.target.value);}} />
             </div>
           </div>
@@ -78,7 +78,7 @@ function RegisterBox() {
             <button className="close" onClick={ModalClose}>Fechar</button>
           </Modal>
           <div className="Copyright" onClick={contactUs}>
-            <h5>CyberHomoSapiens™</h5>
+            <h5>cauabeisola™</h5>
           </div>
         </div>
       </div>
