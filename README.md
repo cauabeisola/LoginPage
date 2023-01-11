@@ -1,5 +1,5 @@
-## **Um sistema simples de login.**
+## Um sistema simples de login.
 
-### Utilizou-se o Next.js (framework de javascript) juntamente com o Axios e Firebase
+### Foi utilizado o Next.js (framework de javascript) juntamente com o Axios e Firebase.
 
 ##### - *Aprendendo na prática Next.js + Axios + Firebase*
